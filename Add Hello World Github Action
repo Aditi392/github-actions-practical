@@ -1,0 +1,10 @@
+name : hello world
+#Trigger this workflow on evrey push 
+on:
+    push:
+jobs:
+    say-hello:
+    runs-on:ubantu-latest
+    steps: 
+    name:  printf-hello
+    run:   echo "Hello World!"
